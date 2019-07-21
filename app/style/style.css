@@ -1,0 +1,77 @@
+/* line 5, C:/Users/Bart/breathwork/app/style/global/global.scss */
+body {
+  background-color: #17a6ef; }
+
+/* line 2, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.row {
+  margin: 0 auto;
+  width: 100%; }
+
+/* line 6, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.row::before, .row::after {
+  content: ' ';
+  display: table; }
+
+/* line 10, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.row::after {
+  clear: both; }
+
+/* line 15, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.row {
+  max-width: 100%;
+  margin: 0 auto; }
+
+/* line 20, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.columns {
+  float: left; }
+
+/* line 24, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.cl-3 {
+  width: 25%; }
+
+/* line 27, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.cl-6 {
+  width: 75%; }
+
+/* line 30, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.cl-9 {
+  width: 75%; }
+
+/* line 34, C:/Users/Bart/breathwork/app/style/views/main.scss */
+.small-centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 39, C:/Users/Bart/breathwork/app/style/views/main.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle; }
+
+/*
+=========================CONTAINER============================
+
+*/
+/* line 53, C:/Users/Bart/breathwork/app/style/views/main.scss */
+container {
+  height: 100vh;
+  width: 100vw; }
+  /* line 57, C:/Users/Bart/breathwork/app/style/views/main.scss */
+  container header {
+    background-color: #fff;
+    height: 14vh; }
+    /* line 61, C:/Users/Bart/breathwork/app/style/views/main.scss */
+    container header .logo-breath {
+      display: block;
+      margin: 0 auto;
+      height: 12vh; }
+    /* line 66, C:/Users/Bart/breathwork/app/style/views/main.scss */
+    container header .hamburger-menu {
+      height: 6vh;
+      position: absolute;
+      top: 0; }
+
+/*# sourceMappingURL=style.css.map */

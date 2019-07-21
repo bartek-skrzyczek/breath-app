@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body ng-app="breathwork">
+
+
+
+<container ng-controller="menu">
+    <header data-ng-if="state !== 'tutorial.pageView'">
+        <row>
+            <img class="logo-breath" src="images/logo_EN_final_blue.svg">
+        </row>
+        <div class="cl-3 columns" ng-click="showMenu()">
+            <img class="hamburger-menu" src="images/menu_blue.svg"
+                 ng-click="showMenu()">
+        </div>
+
+        <nav class="menu" click-outside="closeMenu()">
+            <img class="logo-breath" src="images/logo_EN_final.svg">
+            <ul>
+                <li ui-sref="exercise" class='top margin-bottom first-in-menu'>
+                    <img class="menu-svg-big" src="images/play_male_menu_blue.svg">
+
+                    <span>Oddychaj</span></li>
+                <li ui-sref="page.pageView({pageId:'Jak_cwiczyc'})" class='middle'>
+                    <img class="menu-svg-big" src="images/pytajnik_blue.svg">
+                    <span>Jak ćwiczyć?</span></li>
+                <li ui-sref="page.pageView({pageId:'Czas_trwania'})" class='middle'>
+                    <img class="menu-svg-big" src="images/czas_trwania_blue.svg">
+                    <span>Czas trwania</span></li>
+                <li ui-sref="page.pageView({pageId:'Dlaczego_567_oddechow'})" class='middle'>
+                    <img class="menu-svg-big" src="images/6x_blue.svg">
+                    <span>Dlaczego 5, 6, 7 oddechów?</span></li>
+                <li ui-sref="page.pageView({pageId:'Dlaczego_oddychac_nosem'})" class='middle'>
+                    <img class="menu-svg-big" src="images/nos_blue.svg">
+                    <span>Dlaczego oddychać nosem?</span></li>
+                <li ui-sref="page.pageView({pageId:'Wsparcie_leczenia_bolu'})" class='middle'>
+                    <img class="menu-svg-big" src="images/wsparcie_w_bolu-piorun_blue.svg">
+                    <span>Wsparcie w leczeniu bólu</span></li>
+                <li ui-sref="page.pageView({pageId:'Mozliwe_objawy_uboczne'})" class='middle'>
+                    <img class="menu-svg-big" src="images/objawy_uboczne_blue.svg">
+                    <span>Możliwe "objawy uboczne"</span></li>
+                <li ui-sref="page.pageView({pageId:'Przeciwwskazania'})" class='middle margin-bottom'>
+                    <img class="menu-svg-big" src="images/przeciwwskazania_blue.svg">
+                    <span>Przeciwwskazania</span></li>
+                <li ui-sref="page.pageView({pageId:'O_aplikacji'})" class='bottom'>
+                    <img class="menu-svg-big" src="images/o_aplikacji_blue.svg">
+                    <span>O aplikacji</span></li>
+                <li ui-sref="page.pageView({pageId:'Autorzy'})" class='bottom'>
+                    <img class="menu-svg-big" src="images/autorzy_blue.svg">
+                    <span>Autorzy</span></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <div ui-view/>
+</container>
+
+<script src="js/libs.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

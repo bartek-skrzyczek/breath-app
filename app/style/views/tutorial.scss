@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 1em;
+
+  h2 {
+    display: inline-block;
+    padding: 0.5em;
+    padding-left: 2em;
+    font-size: 1.5em;
+    font-family: $roboto-slab;
+    color: $bg-color;
+  }
+
+  .right {
+    float: right;
+    padding-right: 2em;
+  }
+}
+
+.p-static-first {
+  line-height: 1.4em;
+  font-family: $roboto-slab;
+  color: $font-color;
+  font-size: 1.5em;
+}
+
+.tutorial-circle {
+  width: 1.7em;
+  height: 1.7em;
+  margin: 0em 0.5em 0em 1.5em;
+}
+
+.footer {
+  background: $bg-color;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.go-on-button {
+  width: 10em;
+  height: 2em;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 0.3em;
+
+  p {
+    font-family: $roboto-slab;
+    color: $bg-color;
+    font-size: 1.2em;
+    padding-top: 0.3em;
+  }
+}
+
+.tutorial div {
+  height: 100vh;
+}

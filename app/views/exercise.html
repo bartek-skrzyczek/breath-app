@@ -1,0 +1,53 @@
+<div class='timer'>
+    <p>&nbsp;<span ng-if="state !== 'config'">{{ eta }}</span></p>
+</div>
+<visualisation on-click-circle="onClickCircle" eta="etaUpdate"></visualisation>
+
+<div data-ng-if="state ==='config'">
+    <div class='breath-count'>
+        <p>Ustaw ilość oddechów</p>
+
+        <div class='option-table-3'>
+
+            <div class='col-3 bordered-square' ng-repeat="freq in frequences"
+                 data-ng-class="{active: activeFreq === freq}" data-ng-click="setActiveFrequency(freq)">
+                <h4>{{ freq }}</h4>
+
+                <p>/min</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='time-count'>
+        <p>Wybierz czas sesji</p>
+
+        <div class='option-table-4'>
+            <div class='col-4 bordered-square' ng-repeat="duration in durations"
+                 data-ng-class="{active: activeDuration === duration}" data-ng-click="setActiveDuration(duration)">
+                <h4>{{ duration }}</h4>
+
+                <p>min</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-ng-if="state === 'exercise' || state === 'pause'">
+    <p class='breathmeter'><b>{{activeFreq}}</b> oddechów na minutę</p>
+
+    <div class='button-panel'>
+        <div class='col-2'>
+            <div class='circle-button'>
+                <img class='pause' src="images/pause_blue.svg" ng-click="pause()" data-ng-if="state !== 'pause'"/>
+                <img class='pause' src="images/play_blue.svg" ng-click="play()" data-ng-if="state === 'pause'"/>
+            </div>
+            <p class='label'>Pause</p>
+        </div>
+        <div class='col-2'>
+            <div class='circle-button' ng-click="stop()">
+                <img class='pause' src="images/stop_blue.svg"/>
+            </div>
+            <p class='label'>Stop</p>
+        </div>
+    </div>
+</div>
