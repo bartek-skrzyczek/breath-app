@@ -4,7 +4,7 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "cors": "^2.7.1",
-    "express": "^4.13.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "connect-livereload": "^0.5.4",
